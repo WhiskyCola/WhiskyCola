@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- change language -->
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- OG Metas -->
+    <meta property="og:url" content="https://eeerik.com" /> <!-- website link -->
+    <meta property="og:type" content="website" /> <!-- content type -->
+    <meta property="og:title" content="" /> <!-- website tile -->
+    <meta property="og:description" content="" /> <!-- website description -->
+    <meta property="og:image" content="https://eeerik.com/icons/thumb.jpg" /> <!-- website image -->
+
+    <!-- Standard Metas -->
+    <meta name="description" content=""> <!-- website description -->
+    <meta name="keywords" content=""> <!-- website keywords -->
+    <meta name="author" content=""> <!-- website author -->
+    <meta name="language" content="EN"> <!-- website author -->
+    <meta name="coverage" content="Worldwide"> <!-- website coverage -->
+    <meta name="distribution" content="Global"> <!-- website distribition -->
+    <meta name="rating" content="General"> <!-- website rating -->
+
+    <title></title> <!-- website title -->
+
+    <!-- Browser Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"> <!-- browser icon 32x32 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"> <!-- browser icon 16x16 -->
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5"> <!-- browser mask icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"> <!-- browser Apple touch icon -->
+    <link rel="shortcut icon" href="icons/favicon.ico"> <!-- browser default icon -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/reset.css"> <!-- reset stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/master.css"> <!-- master stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css"> <!-- style stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/media.css"> <!-- media stylesheet -->
+
+    <!-- Google Analytics -->
+
+    <!-- GOOGLE ANALYTICS INFORMATION
+        If you have any Google analytics link, place it here... 
+        More information: https://marketingplatform.google.com/intl/nl/about/analytics/
+    -->
+
+    <!-- End Google Analytics -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- code goes here... -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="wall">
+
+            <script>
+                var myStringArray = ["https://cdn.discordapp.com/attachments/624729833838215178/624730420558168081/1605050213118837860.jpg"];
+                var arrayLength = myStringArray.length;
+                for (var i = 0; i < arrayLength; i++) {
+                    console.log(myStringArray[i]);
+                    //Do something
+                    document.write('<div class="wall-item"><img src="' + myStringArray[i] + '" alt="' + myStringArray[i] + '"></div>')
+                }
+            </script>
+
+        </div>
+    </main>
+    <script src="../../assets/js/jaliswall.js"></script>
+    <script type="text/javascript">
+
+        $('.wall').jaliswall({
+            item: '.wall-item',
+            columnClass: '.wall-column'
+        });
+
+    </script>
+</body>
+
+</html>

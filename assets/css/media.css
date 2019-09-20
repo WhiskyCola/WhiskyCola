@@ -1,0 +1,13 @@
+/* On screens that are 992px (tablet) or less */
+@media screen and (max-width: 992px) {
+    /* 
+   *    Code goes here... 
+   */
+}
+
+/* On screens that are 600px (phone) or less */
+@media screen and (max-width: 600px) {
+    /* 
+    *    Code goes here... 
+    */
+}

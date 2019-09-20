@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f8f9;
+}
+
+
+.col-sm {
+    margin: 5% 0;
+}
+
+.col-sm h5 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.wall-item {
+    display: block;
+    margin: 10px 5px;
+    background: #1e1e1e;
+    transition: all 200ms;
+}
+
+.wall-item>img {
+    display: block;
+    width: 100%;
+}
+
+.wall-column {
+    display: block;
+    position: relative;
+    width: 33.3333%;
+    float: left;
+    box-sizing: border-box;
+}
